@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+.select-container{
+    font-weight: bold;
+    text-align: center;
+    margin-top: block;
+}
+
+#result{
+    text-align: center;
+    display: block;
+}
+
+#result1{
+    margin-top: 60px;
+    text-align: center;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+body{
+    background-color: rbg(rgb(158, 13, 241));
+    /* background-image: url(""); */
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
