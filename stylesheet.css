@@ -1,7 +1,7 @@
 h1{
     text-align: center;
     font-size: 60px;
-    color: aliceblue;
+    color: rgb(173, 10, 248);
 }
 
 .select-container{
@@ -24,7 +24,7 @@ h1{
 }
 
 body{
-    background-color: rbg(rgb(158, 13, 241));
+    background-color: rbg(rgb(198, 194, 201));
     /* background-image: url(""); */
     background-blend-mode: overlay;
     background-size: cover;

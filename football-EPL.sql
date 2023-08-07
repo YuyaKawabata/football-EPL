@@ -1,0 +1,58 @@
+--CREATE TABLE rank(
+-- rank NUMBER(3) not null,
+-- team_name VARCHAR2(20) NOT NULL,
+-- game number(3) not null,
+-- win number(2) not null,
+-- drow number(2) not null,
+-- lose number(2) not null,
+-- gf number(3) not null,
+-- ga number(2) not null,
+-- gd number(3) not null,
+-- points number(3) not null,
+-- season_id varchar2(10) not null references select_season(id)
+--);
+
+--insert into rank VALUES(1,'マンチェスター・シティFC',38,28,5,5,94,33,61,89,'22-23');
+--insert into rank VALUES(2,'アーセナルFC',38,26,6,6,88,43,45,84,'22-23');
+--insert into rank VALUES(3,'マンチェスター・ユナイテッドFC',38,23,6,9,58,43,15,75,'22-23');
+--insert into rank VALUES(4,'ニューカッスル・ユナイテッドFC',38,19,14,5,68,33,35,71,'22-23');
+--insert into rank VALUES(5,'リヴァプールFC',38,19,10,9,75,47,28,67,'22-23');
+--insert into rank VALUES(6,'ブライトン・アンド・ホーヴ・アルビオンFC',38,18,8,12,72,53,19,62,'22-23');
+--insert into rank VALUES(7,'アストン・ヴィラFC',38,18,7,13,51,46,5,61,'22-23');
+--insert into rank VALUES(8,'トッテナム・ホットスパーFC',38,18,6,14,70,63,7,60,'22-23');
+--insert into rank VALUES(9,'ブレントフォードFC',38,15,14,9,58,46,12,59,'22-23');
+--insert into rank VALUES(10,'フラムFC',38,15,7,16,55,53,2,52,'22-23');
+--insert into rank VALUES(11,'クリスタル・パレスFC',38,11,12,15,40,49,-9,45,'22-23');
+--insert into rank VALUES(12,'チェルシーFC',38,11,11,16,38,47,-9,44,'22-23');
+--insert into rank VALUES(13,'ウルヴァーハンプトン・ワンダラーズFC',38,11,8,19,31,58,-27,41,'22-23');
+--insert into rank VALUES(14,'ウェストハム・ユナイテッドFC',38,11,7,20,42,55,-13,40,'22-23');
+--insert into rank VALUES(15,'AFCボーンマス',38,11,6,21,37,71,-34,39,'22-23');
+--insert into rank VALUES(16,'ノッティンガム・フォレストFC',38,9,11,18,38,68,-30,38,'22-23');
+--insert into rank VALUES(17,'エヴァートンFC',38,8,12,18,34,57,-23,36,'22-23');
+--insert into rank VALUES(18,'レスター・シティFC',38,9,7,22,51,68,-17,34,'22-23');
+--insert into rank VALUES(19,'リーズ・ユナイテッドFC',38,7,10,21,48,78,-30,31,'22-23');
+--insert into rank VALUES(20,'サウサンプトンFC',38,6,7,25,36,73,-37,25,'22-23');
+--
+--commit;
+
+--CREATE TABLE goal(
+-- rank_g NUMBER(3) not null,
+-- name VARCHAR2(100) NOT NULL,
+-- team_name VARCHAR2(100) NOT NULL,
+-- goal_num number(3) not null,
+-- season_id varchar2(10) not null references select_season(id)
+--);
+
+--insert into goal VALUES(1,'アーリング・ハーランド','マンチェスター・シティFC',36,'22-23');
+--insert into goal VALUES(2,'ハリー・ケイン','トッテナム・ホットスパーFC',30,'22-23');
+--insert into goal VALUES(3,'イワン・トニー','ブレントフォードFC',20,'22-23');
+--
+--commit;
+--
+--CREATE TABLE goal(
+-- rank_g NUMBER(3) not null,
+-- name VARCHAR2(100) NOT NULL,
+-- team_name VARCHAR2(100) NOT NULL,
+-- goal_num number(3) not null,
+-- season_id varchar2(10) not null references select_season(id)
+--);
