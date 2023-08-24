@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(173, 10, 248);
+}
+
+.select-container{
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.searchButton {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#result{
+    text-align: center;
+    margin: auto;
+}
+
+#results{
+    margin-top: 60px;
+    text-align: center;
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+body{
+    background-color: rbg(rgb(198, 194, 201));
+    /* background-image: url(""); */
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
