@@ -1,18 +1,36 @@
+body {
+    background-color: rgb(104, 235, 180);
+    /* background-image: url("R.png"); */
+}
+
+#football{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* 小さな負の z-index で最背面に配置 */
+    opacity: 0.2; /* 透明度を設定 */
+}
+
 h1{
     text-align: center;
     font-size: 60px;
     color: rgb(173, 10, 248);
+    position: relative;
 }
 
 .select-container{
     font-weight: bold;
     text-align: center;
+    margin-bottom: 5px;
+    overflow-y: auto;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
   }
 
 .searchButton {
@@ -34,10 +52,17 @@ h1{
     font-weight: bold;
 }
 
-body{
-    background-color: rbg(rgb(198, 194, 201));
-    /* background-image: url(""); */
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-repeat: no-repeat;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+  
+th {
+    background-color: #f2f2f2;
 }

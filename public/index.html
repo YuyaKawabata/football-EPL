@@ -6,6 +6,7 @@
         <title>プレミアリーグ過去成績検索ツール</title>
     </head>
     <body>
+        <img src="R.png" alt="Football" id="football">
         <h1>プレミアリーグ過去成績検索ツール</h1>
         <div class="select-container">
             <label for="SeasonSelect">シーズン：</label>
@@ -19,8 +20,18 @@
             <button id="searchButton">検索</button>
         </div>
         <div id="result">
+            <table id="resultsTable">
+                <thead>
+                    <!-- ヘッダーは JavaScript で追加されます -->
+                </thead>
+                <tbody id="resultsBody">
+                    <!-- データは JavaScript で追加されます -->
+                </tbody>
+            </table>
             <p id="results"></p>
         </div>
+        <script src="ranks.js"></script>
+        <script src="goal.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

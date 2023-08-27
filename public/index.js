@@ -37,13 +37,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const response = await fetch(`/api/data?value1=${value1}&value2=${value2}`);
         const data = await response.json();
 
-        // 取得したデータを表示
-        results.innerHTML = '';
-        data.forEach(item => {
-          const itemDiv = document.createElement('div');
-          itemDiv.textContent = `ID: ${item.ID}, Column1: ${item.COLUMN1}, Column2: ${item.COLUMN2}`;
-          results.appendChild(itemDiv);
-        });
+        if (value2 === "順位表") {
+          displayRanks(data); // rank.js の関数を呼び出す
+        } else if (value2 === "得点王") {
+          displayGoal(data); // goal.js の関数を呼び出す
+        }
       } catch (error) {
         console.error('Error:', error);
       }
