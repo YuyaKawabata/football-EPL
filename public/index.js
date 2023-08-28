@@ -41,6 +41,14 @@ document.addEventListener("DOMContentLoaded", () => {
           displayRanks(data); // rank.js の関数を呼び出す
         } else if (value2 === "得点王") {
           displayGoal(data); // goal.js の関数を呼び出す
+        } else if (value2 === "アシスト王") {
+          displayAssist(data); // assist.js の関数を呼び出す
+        } else if (value2 === "最優秀GK賞") {
+          displayGk(data); // GK.js の関数を呼び出す
+        } else if (value2 === "年間MVP") {
+          displayMVP(data); // MVP.js の関数を呼び出す
+        } else if (value2 === "年間最優秀若手選手賞") {
+          displayYOUNGMVP(data); // YOUNGMVP.js の関数を呼び出す
         }
       } catch (error) {
         console.error('Error:', error);

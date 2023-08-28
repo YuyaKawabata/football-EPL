@@ -30,15 +30,15 @@ app.get('/api/data', async (req, res) => {
     }else if (value2 === "得点王") {
       query = `SELECT * FROM GOAL WHERE SEASON_ID = :value1`;
     }
-    // else if (value2 === "アシスト王") {
-    //   query = `SELECT * FROM ASSIST WHERE SEASON_ID = :value1`;
-    // }else if (value2 === "最優秀GK賞") {
-    //   query = `SELECT * FROM GK WHERE SEASON_ID = :value1`;
-    // }else if (value2 === "年間MVP") {
-    //   query = `SELECT * FROM MVP WHERE SEASON_ID = :value1`;
-    // }else if(value2 === "年間最優秀若手選手賞") {
-    //   query = `SELECT * FROM YOUNGMVP WHERE SEASON_ID = :value1`;
-    // }
+    else if (value2 === "アシスト王") {
+      query = `SELECT * FROM ASSIST WHERE SEASON_ID = :value1`;
+    }else if (value2 === "最優秀GK賞") {
+      query = `SELECT * FROM GK WHERE SEASON_ID = :value1`;
+    }else if (value2 === "年間MVP") {
+      query = `SELECT * FROM MVP WHERE SEASON_ID = :value1`;
+    }else if(value2 === "年間最優秀若手選手賞") {
+      query = `SELECT * FROM YOUNGMVP WHERE SEASON_ID = :value1`;
+    }
 
     const result = await connection.execute(query, { value1 });
     connection.release();
